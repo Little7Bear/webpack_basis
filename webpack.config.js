@@ -112,7 +112,6 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            limit: 8 * 1024,
             outputPath: 'font/',
           }
         }
