@@ -1,4 +1,27 @@
-import './style.css';
-import'./style.scss';
+import './css/style.css';
+import './css/style.scss';
 
-console.log(123);
+class A {
+    constructor() {
+      this.x = 1;
+    }
+    print() {
+      console.log(this.x);
+    }
+  }
+  
+  class B extends A {
+    constructor() {
+      super();
+      this.x = 2;
+    }
+    m() {
+      super.print();
+    }
+  }
+  
+  let b = new B();
+  b.m() // 2
+
+let s1 = Symbol('foo');
+console.log(s1);
