@@ -31,8 +31,6 @@ module.exports = merge(common, {
   },
 
   plugins: [
-    // new UglifyJSPlugin(),
-
     new MiniCssExtractPlugin({
       filename: 'css/[name].[hash].css',
     }),
